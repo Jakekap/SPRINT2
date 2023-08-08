@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product List</title>
+    <link rel="stylesheet" href="./productDetail.css" />
+    <link rel="stylesheet" href="./productList.css" />
+    <link rel="stylesheet" href="shopping.css" />
+    <link rel="stylesheet" href="adminPanel.css" />
+  </head>
+  <body>
+    <header>
+      <!-- // Para ingresar al link y pasar de pagina// -->
+      <nav>
+        <img src="../images/logo.svg" alt="LOGO" />
+        <a href="/pages">Collections</a>
+        <a href="/pages/?collection=men">Men</a>
+        <a href="/pages/?collection=women">Women</a>
+        <a href="/pages/adminPanel">Admin Panel</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+      <div class="ImgHeader">
+        <button class="shopping-cart">
+          <img
+            class="cart-nav"
+            src="../images/icon-cart.svg"
+            alt="CARRO DE COMPRAS"
+          />
+        </button>
+        <aside>
+          <h3 id="cart">Cart</h3>
+          <div id="cartItemList" class="content"></div>
+        </aside>
+        <img
+          class="ImgAvatar"
+          src="../images/image-avatar.png"
+          alt="IMAGEN DE AVATAR"
+        />
+      </div>
+    </header>
+    <hr />
+    <main class="main">
+      <!-- Modal -->
+      <div class="modal" id="myModal">
+        <div class="modal-content">
+          <span class="close" id="closeModalBtn">&times;</span>
+          <form id="createShoeForm" class="inputs">
+            <div class="input-group1">
+              <label>
+                Nombre
+                <input type="text" name="shoeName" id="shoe-name" />
+              </label>
+              <label
+                >Precio
+                <input
+                  type="number"
+                  placeholder="$"
+                  name="price"
+                  id="shoe-price"
+                />
+              </label>
+              <label
+                >Categoria
+                <input
+                  type="text"
+                  placeholder="men"
+                  name="category"
+                  id="shoe-category"
+                />
+              </label>
+            </div>
+            <div class="input-group2">
+              <label
+                >Imagen #1
+                <input
+                  type="url"
+                  placeholder="https://myimage.jpg"
+                  name="url1"
+                  id="img-url1"
+                />
+              </label>
+              <label
+                >Imagen #2
+                <input
+                  type="url"
+                  placeholder="https://myimage.jpg"
+                  name="url2"
+                  id="img-url2"
+                />
+              </label>
+              <label
+                >Imagen #3
+                <input
+                  type="url"
+                  placeholder="https://myimage.jpg"
+                  name="url3"
+                  id="img-url3"
+                />
+              </label>
+              <label
+                >Imagen #4
+                <input
+                  type="url"
+                  placeholder="https://myimage.jpg"
+                  name="url4"
+                  id="img-url4"
+                />
+              </label>
+            </div>
+            <button id="createShoeBtn">Crear</button>
+          </form>
+        </div>
+      </div>
+      <button id="add-shoes">+</button>
+      <ul class="shoes-container"></ul>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./productList.js"></script>
+    <script type="module" src="../services/shopping.js"></script>
+    <script type="module" src="./adminPanel.js"></script>
+  </body>
+</html>

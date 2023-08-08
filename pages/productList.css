@@ -4,6 +4,8 @@ li {
 
 .main {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .title {
@@ -11,10 +13,13 @@ li {
   margin-bottom: 30px;
 }
 
+#add-shoes {
+  margin: 0 120px;
+}
+
 .shoes-container {
   width: 100%;
   display: grid;
-  margin: 0 120px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 40px;
 }
@@ -53,6 +58,6 @@ li {
   font-size: 20px;
   font-weight: bold;
 }
-.hiden{
+.hiden {
   display: none;
 }
