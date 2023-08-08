@@ -52,7 +52,18 @@ createShoeBtn.addEventListener("click", (e) => {
       console.error("Error al crear el producto", error);
     });
 });
-deleteShoeBtn.addEventListener("click", (e) => {
+deleteShoeBtn.addEventListener("click", async (e) => {
   e.stopPropagation();
-  console.log(e.target.id);
+  
+  const productId = deleteShoeBtn.getAttribute("data-id");
+
+  try {
+    const result = await deleteProduct(productId);
+    if (result) {
+      console.log("Producto eliminado exitosamente:", productId);
+      
+    }
+  } catch (error) {
+    console.error("Error al eliminar el producto", error);
+  }
 });

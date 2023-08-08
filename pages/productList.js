@@ -1,4 +1,5 @@
 import { getProducts } from "../services/api.js";
+import { deleteProduct } from "../services/api.js";
 const card = document.querySelector(".shoes-container");
 
 const url = window.location;
@@ -31,3 +32,24 @@ async function listProducts(collection) {
   });
 }
 listProducts(currentCollection);
+
+//Botón eliminar 
+const deleteButtons = document.querySelectorAll(".delete-button");
+
+deleteButtons.forEach((deleteButton) => {
+  deleteButton.addEventListener("click", async (event) => {
+    event.stopPropagation();
+
+    const productId = deleteButton.getAttribute("data-id");
+
+    try {
+      const result = await deleteProduct(productId);
+      if (result) {
+        console.log("Producto eliminado:", productId);
+        
+      }
+    } catch (error) {
+      console.error("Error al eliminar el producto", error);
+    }
+  });
+});
