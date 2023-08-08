@@ -4,9 +4,21 @@ const modal = document.getElementById("myModal");
 const createShoeBtn = document.getElementById("createShoeBtn");
 const deleteShoeBtn = document.querySelector(".delete-button");
 
-deleteShoeBtn.addEventListener("click", (e) => {
-  e.stopPropagation();
-  console.log(e.target.id);
+// Abrir el modal al hacer clic en el botón
+addButton.addEventListener("click", () => {
+  modal.style.display = "block";
+});
+
+// Cerrar el modal al hacer clic en la "X"
+closeModalBtn.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+
+// Cerrar el modal si se hace clic fuera de él
+window.addEventListener("click", (event) => {
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
 });
 
 createShoeBtn.addEventListener("click", (e) => {
@@ -40,19 +52,7 @@ createShoeBtn.addEventListener("click", (e) => {
       console.error("Error al crear el producto", error);
     });
 });
-// Abrir el modal al hacer clic en el botón
-addButton.addEventListener("click", () => {
-  modal.style.display = "block";
-});
-
-// Cerrar el modal al hacer clic en la "X"
-closeModalBtn.addEventListener("click", () => {
-  modal.style.display = "none";
-});
-
-// Cerrar el modal si se hace clic fuera de él
-window.addEventListener("click", (event) => {
-  if (event.target === modal) {
-    modal.style.display = "none";
-  }
+deleteShoeBtn.addEventListener("click", (e) => {
+  e.stopPropagation();
+  console.log(e.target.id);
 });
