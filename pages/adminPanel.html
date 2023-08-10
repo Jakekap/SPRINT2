@@ -42,6 +42,7 @@
     </header>
     <hr />
     <main class="main">
+      <button id="add-shoes">+</button>
       <!-- Modal -->
       <div class="modal" id="myModal">
         <div class="modal-content">
@@ -110,15 +111,15 @@
               </label>
             </div>
             <button id="createShoeBtn">Crear</button>
+            <button id="editShoeBtn">Editar</button>
           </form>
         </div>
       </div>
-      <button id="add-shoes">+</button>
       <ul class="shoes-container"></ul>
     </main>
     <script type="module" src="./productList.js"></script>
+    <script type="module" src="./adminPanel.js"></script>
     <script type="module" src="../services/shopping.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script type="module" src="./adminPanel.js"></script>
   </body>
 </html>

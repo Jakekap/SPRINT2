@@ -1,12 +1,15 @@
+import { postProduct } from "../services/api.js";
+
 const addButton = document.getElementById("add-shoes");
 const closeModalBtn = document.getElementById("closeModalBtn");
 const modal = document.getElementById("myModal");
 const createShoeBtn = document.getElementById("createShoeBtn");
-const deleteShoeBtn = document.querySelector(".delete-button");
+const editShoeBtn = document.getElementById("editShoeBtn");
 
-// Abrir el modal al hacer clic en el botón
+// Abrir el modal al hacer clic en el botónn
 addButton.addEventListener("click", () => {
   modal.style.display = "block";
+  editShoeBtn.style.display = "none";
 });
 
 // Cerrar el modal al hacer clic en la "X"
@@ -22,7 +25,7 @@ window.addEventListener("click", (event) => {
 });
 
 createShoeBtn.addEventListener("click", (e) => {
-  // Formulario
+  // Formulario para crear el producto
   e.preventDefault();
   const createShoeForm = document.getElementById("createShoeForm");
   const nombre = createShoeForm.shoeName.value;
@@ -41,29 +44,5 @@ createShoeBtn.addEventListener("click", (e) => {
     imagen2,
     imagen3,
   };
-  axios
-    .post("http://localhost:3000/productos", data)
-    .then((response) => {
-      // Maneja la respuesta del servidor si es necesario
-      console.log(response.data);
-    })
-    .catch((error) => {
-      // Maneja los errores de la solicitud si es necesario
-      console.error("Error al crear el producto", error);
-    });
-});
-deleteShoeBtn.addEventListener("click", async (e) => {
-  e.stopPropagation();
-  
-  const productId = deleteShoeBtn.getAttribute("data-id");
-
-  try {
-    const result = await deleteProduct(productId);
-    if (result) {
-      console.log("Producto eliminado exitosamente:", productId);
-      
-    }
-  } catch (error) {
-    console.error("Error al eliminar el producto", error);
-  }
+  postProduct(data);
 });
