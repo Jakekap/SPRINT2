@@ -1,36 +1,6 @@
 {
   "productos": [
     {
-      "nombre": "Nike Air Max Solo",
-      "precio": "50000000",
-      "coleccion": "men",
-      "imagen0": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f3bb522b-adfc-441d-92cd-f25f855fa965/calzado-air-max-solo-4SzqpT.png",
-      "imagen1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/47e49fad-0ccb-4bc8-8e8f-f012f77741ca/calzado-air-max-solo-4SzqpT.png",
-      "imagen2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/95d6cdba-a527-438e-b864-c99297961b4e/calzado-air-max-solo-4SzqpT.png",
-      "imagen3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/60b49213-cab7-491b-8c44-0d23309e9108/calzado-air-max-solo-4SzqpT.png",
-      "id": 3
-    },
-    {
-      "nombre": "TENIS CLÁSICOS BLANCOS CLASSIC SLIP-ON HARIBO VANS",
-      "precio": "449000",
-      "coleccion": "women",
-      "imagen0": "https://vansco.vteximg.com.br/arquivos/ids/307914-1200-1200/VN0A7Q5DBMB-1.jpg?v=638236700243170000",
-      "imagen1": "https://vansco.vteximg.com.br/arquivos/ids/308775-1200-1200/VN0A7Q5DBMB-2.jpg?v=638236702831170000",
-      "imagen2": "https://vansco.vteximg.com.br/arquivos/ids/309661-1200-1200/VN0A7Q5DBMB-3.jpg?v=638236705407730000",
-      "imagen3": "https://vansco.vteximg.com.br/arquivos/ids/310458-1200-1200/VN0A7Q5DBMB-4.jpg?v=638236707660800000",
-      "id": 4
-    },
-    {
-      "id": 5,
-      "nombre": "TENIS SKATE SUELA DE GOMA MARRONES ROWAN HOMBRE VANS",
-      "precio": "479000",
-      "coleccion": "men",
-      "imagen0": "https://vansco.vteximg.com.br/arquivos/ids/289710-1200-1200/VN0A5JIC3PA-1.jpg?v=638144966996630000",
-      "imagen1": "https://vansco.vteximg.com.br/arquivos/ids/290520-1200-1200/VN0A5JIC3PA-2.jpg?v=638144970209070000",
-      "imagen2": "https://vansco.vteximg.com.br/arquivos/ids/291278-1200-1200/VN0A5JIC3PA-3.jpg?v=638144973582000000",
-      "imagen3": "https://vansco.vteximg.com.br/arquivos/ids/292015-1200-1200/VN0A5JIC3PA-4.jpg?v=638144976908470000"
-    },
-    {
       "id": 6,
       "nombre": "Nike Free Metcon 5",
       "precio": "560000",
@@ -81,24 +51,14 @@
       "imagen3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8037236a-a926-4398-b5d4-902a92093112/calzado-air-huarache-craft-Cp4dSR.png"
     },
     {
-      "id": 11,
-      "nombre": "Luka 1",
-      "precio": "760000",
-      "coleccion": "men",
-      "imagen0": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b07692b9-4d5f-4abe-800a-43307fda41ce/calzado-de-b%C3%A1squetbol-luka-1-69X9Vs.png",
-      "imagen1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/34d217c2-42b0-425f-a67f-8142c8a00f90/calzado-de-b%C3%A1squetbol-luka-1-69X9Vs.png",
-      "imagen2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c20cefea-d003-4216-bc81-218522edd493/calzado-de-b%C3%A1squetbol-luka-1-69X9Vs.png",
-      "imagen3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/921eeaf9-8f37-44cc-bdfe-8ae9a274fa83/calzado-de-b%C3%A1squetbol-luka-1-69X9Vs.png"
-    },
-    {
-      "id": 12,
-      "nombre": "TENIS SURF MULTICOLOR AUTHENTIC VR3 SF MAMI WATA VANS",
-      "precio": "560000",
+      "nombre": "Test",
+      "precio": "2000",
       "coleccion": "women",
-      "imagen0": "https://vansco.vteximg.com.br/arquivos/ids/305117-1200-1200/VN0A4BX5CRM-1.jpg?v=638215984410200000",
-      "imagen1": "https://vansco.vteximg.com.br/arquivos/ids/305118-1200-1200/VN0A4BX5CRM-2.jpg?v=638215984631830000",
-      "imagen2": "https://vansco.vteximg.com.br/arquivos/ids/305119-1200-1200/VN0A4BX5CRM-3.jpg?v=638215984763600000",
-      "imagen3": "https://vansco.vteximg.com.br/arquivos/ids/305120-1200-1200/VN0A4BX5CRM-4.jpg?v=638215984925500000"
+      "imagen0": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f3bb522b-adfc-441d-92cd-f25f855fa965/calzado-air-max-solo-4SzqpT.png",
+      "imagen1": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/47e49fad-0ccb-4bc8-8e8f-f012f77741ca/calzado-air-max-solo-4SzqpT.png",
+      "imagen2": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/95d6cdba-a527-438e-b864-c99297961b4e/calzado-air-max-solo-4SzqpT.png",
+      "imagen3": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/60b49213-cab7-491b-8c44-0d23309e9108/calzado-air-max-solo-4SzqpT.png",
+      "id": 11
     }
   ],
   "shopping": [

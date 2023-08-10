@@ -5,11 +5,19 @@ const closeModalBtn = document.getElementById("closeModalBtn");
 const modal = document.getElementById("myModal");
 const createShoeBtn = document.getElementById("createShoeBtn");
 const editShoeBtn = document.getElementById("editShoeBtn");
+const createShoeForm = document.getElementById("createShoeForm");
 
 // Abrir el modal al hacer clic en el botónn
 addButton.addEventListener("click", () => {
   modal.style.display = "block";
   editShoeBtn.style.display = "none";
+  createShoeForm.shoeName.value = "";
+  createShoeForm.price.value = "";
+  createShoeForm.category.value = "";
+  createShoeForm.url1.value = "";
+  createShoeForm.url2.value = "";
+  createShoeForm.url3.value = "";
+  createShoeForm.url4.value = "";
 });
 
 // Cerrar el modal al hacer clic en la "X"
@@ -27,7 +35,6 @@ window.addEventListener("click", (event) => {
 createShoeBtn.addEventListener("click", (e) => {
   // Formulario para crear el producto
   e.preventDefault();
-  const createShoeForm = document.getElementById("createShoeForm");
   const nombre = createShoeForm.shoeName.value;
   const precio = createShoeForm.price.value.toString();
   const coleccion = createShoeForm.category.value;

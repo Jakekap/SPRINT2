@@ -42,12 +42,17 @@
     </header>
     <hr />
     <main class="main">
-      <button id="add-shoes">+</button>
+      <div class="contenedorBtnAdd">
+        <button id="add-shoes">+ Añadir producto</button>
+      </div>
+      
+      <br>
       <!-- Modal -->
       <div class="modal" id="myModal">
         <div class="modal-content">
-          <span class="close" id="closeModalBtn">&times;</span>
+          
           <form id="createShoeForm" class="inputs">
+            <span class="close" id="closeModalBtn">&times;</span>
             <div class="input-group1">
               <label>
                 Nombre
@@ -63,7 +68,7 @@
                 />
               </label>
               <label
-                >Categoria
+                >Categoría
                 <input
                   type="text"
                   placeholder="men"

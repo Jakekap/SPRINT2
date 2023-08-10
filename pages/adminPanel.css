@@ -45,3 +45,164 @@ input {
   flex-direction: column;
   align-items: flex-end;
 }
+
+#add-shoes{
+  display: inline-block;
+  width: 30%;
+  padding: 25px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;	
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: rgb(255, 125, 26);;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+
+}
+
+#add-shoes:hover {background-color: rgb(230, 112, 22);}
+
+#add-shoes:active {
+  background-color: rgb(230, 112, 22);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.contenedorBtnAdd{
+  display: flex;
+  justify-content: center;
+}
+
+#createShoeBtn{
+  display: inline-block;
+  width: 20%;
+  height: 20%;
+  padding: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;	
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: rgb(255, 125, 26);;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px #999;
+}
+
+#createShoeBtn:hover {background-color: rgb(230, 112, 22);}
+
+#createShoeBtn:active {
+  background-color: rgb(230, 112, 22);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#editShoeBtn{
+  display: inline-block;
+  width: 20%;
+  height: 20%;
+  padding: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;	
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: rgb(255, 125, 26);;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px #999;
+}
+
+#editShoeBtn:hover {background-color: rgb(230, 112, 22);}
+
+#editShoeBtn:active {
+  background-color: rgb(230, 112, 22);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.modal-content{
+  background-color: #ffffff;
+background-image: radial-gradient(rgb(230, 112, 22) 0.5px, #ffffff 0.5px);
+background-size: 10px 10px;
+}
+.inputs{
+  background-color: white;
+  padding: 25px;
+  margin: 20px;
+  box-shadow: 5px 5px 5px 5px #999;
+  color: rgb(230, 112, 22);
+  
+}
+
+input{
+  margin: 10px;
+  padding: 5px;
+     font-size: 16px;
+     border-width: 1px;
+     border-color:rgb(230, 112, 22);
+     background-color: #FFFFFF;
+     color: #585755;
+     border-style: solid;
+     border-radius: 0px;
+     box-shadow: 0px 0px 5px rgb(230, 112, 22);
+     text-shadow: -50px 0px 0px rgba(255,255,255,.75);
+}
+
+.close{
+  color: rgb(230, 112, 22);
+}
+
+.delete-button{
+  display: inline-block;
+  margin: 10px;
+  width: 100px;
+  height: 50px;
+  padding: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;	
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: rgb(255, 125, 26);;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px #999;
+}
+.delete-button:hover {background-color: rgb(230, 112, 22);}
+
+.delete-button:active {
+  background-color: rgb(230, 112, 22);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.edit-button{
+  display: inline-block;
+  margin: 10px;
+  width: 100px;
+  height: 50px;
+  padding: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;	
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: rgb(255, 125, 26);;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px #999;
+}
+.edit-button:hover {background-color: rgb(230, 112, 22);}
+
+.edit-button:active {
+  background-color: rgb(230, 112, 22);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
